@@ -210,7 +210,9 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  background-image: url("https://lh4.googleusercontent.com/3D7WXFI9eQYJb8dkmFjCEDO3Tbrcqae-eywm_9q9alM_RWWdaNJGST14ZvD_a4ji2F0=w2400");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
