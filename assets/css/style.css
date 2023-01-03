@@ -1516,7 +1516,8 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background-image: url("../img/named.jpg");
+  background-size:contain;
 }
 
 footer .copyright {
