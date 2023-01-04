@@ -30,7 +30,7 @@ submit.addEventListener('submit',(test)=>{
         SecureToken : "6fa43549-2e2a-49c6-9a53-5f7042cb9c4a",
         To : 'rejoyanhridoy3@gmail.com',
         From : 'rejoyanhridoy3@gmail.com',
-        Subject : "The subject is"+fsubject.value,
+        Subject : "Subject "+fsubject.value,
         Body : loadingDots
     }).then(
       message => alert(message)
