@@ -1,0 +1,7 @@
+usernam = rejoyanhridoy3@gmail.com
+password = CFDCF920FB76E83430375943A4B0B6F89695
+server = smtp.elasticemail.com
+port = 2525
+
+
+encrypted token = 6fa43549-2e2a-49c6-9a53-5f7042cb9c4a

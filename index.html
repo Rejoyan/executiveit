@@ -682,7 +682,7 @@ You need to be consistent when it comes to checking the current running tag.
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form action="#" method="post" role="form" class="php-email-form">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -701,7 +701,7 @@ You need to be consistent when it comes to checking the current running tag.
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" ></textarea>
+                              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" ></textarea>
                             </div>
                           </div>
                           <div class="col-md-12 text-center my-3">
@@ -710,7 +710,7 @@ You need to be consistent when it comes to checking the current running tag.
                             <div class="sent-message">Your message has been sent. Thank you!</div>
                           </div>
                           <div class="col-md-12 text-center">
-                            <a href="mailto:rejoyanhridoyk@gmail.com?subject = Feedback&body = Message"><button type="submit" class="button button-a button-big button-rouded">Send Message</button></a>
+                            <button type="submit" id="btnSubmit" class="button button-a button-big button-rouded">Send Message</button>
                           </div>
                         </div>
                       </form>
@@ -731,7 +731,7 @@ You need to be consistent when it comes to checking the current running tag.
                         <li><span class="bi bi-phone"></span> +8801825340745</li>
                         <li><span class="bi bi-envelope"></span> rejoyan@abanti.net</li>
                         <li><span class="bi bi-linkedin"></span> Find Me Here
-                                <a href="https://www.linkedin.com/in/hridoyit/?trk=profile-badge&originalSubdomain=bd" class="linkedinlink">Rejoyan Hridoy</a><a href="https://drive.google.com/uc?export=download&id=1-QJkFBzZuw2i07RrJa2ediG36o1hmgkR"><br><button class="buttonD"><i class="fa fa-download"></i> Download my CV</button></a></div>
+                            <a href="https://www.linkedin.com/in/hridoyit/?trk=profile-badge&originalSubdomain=bd" class="linkedinlink">Rejoyan Hridoy</a><a href="https://drive.google.com/uc?export=download&id=1-QJkFBzZuw2i07RrJa2ediG36o1hmgkR"><br><button class="buttonD"><i class="fa fa-download"></i> Download my CV</button></a></div>
 						</li>
                       </ul>
                     </div>
@@ -778,12 +778,19 @@ You need to be consistent when it comes to checking the current running tag.
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="assets/js/sm.js"></script>
+
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
 
 </body>
 
+
 </html>
+      
