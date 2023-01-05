@@ -10,16 +10,7 @@ submit.addEventListener('submit',(test)=>{
     test.preventDefault();
     console.log("Checked");
 
-    //format
-
-    // let mailBody = '
-    
-    // <b></b>
-    // <b></b>
-    // <b></b>
-    // <b></b>
-    // ';
-    let loadingDots = ` <b>Sender: </b>${fname.value}<hr>,
+    let mailBody = ` <b>Sender: </b>${fname.value}<hr>,
     <b>Email: </b>${femail.value}<br>,
     <b>Subject: </b>${fsubject.value}<br>,
     <b>Message was: </b>${fmessage.value}
@@ -31,7 +22,7 @@ submit.addEventListener('submit',(test)=>{
         To : 'rejoyanhridoy3@gmail.com',
         From : 'rejoyanhridoy3@gmail.com',
         Subject : "Subject "+fsubject.value,
-        Body : loadingDots
+        Body : mailBody
     }).then(
       message => alert(message)
     );
