@@ -1,4 +1,4 @@
-usernam = rejoyanhridoy3@gmail.com
+username = rejoyanhridoy3@gmail.com
 password = CFDCF920FB76E83430375943A4B0B6F89695
 server = smtp.elasticemail.com
 port = 2525
