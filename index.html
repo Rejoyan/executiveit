@@ -22,6 +22,50 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+<style>
+.section-bg {
+  background: #f8f9fa;
+  padding: 60px 0;
+}
+
+.testimonial-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #007bff;
+}
+
+.author-test h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.content-test p {
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.swiper {
+  padding-bottom: 50px;
+}
+</style>
 
 </head>
 
@@ -484,65 +528,72 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.gif)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+   <!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials section-bg">
+  <div class="container">
 
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
+    <div class="section-title text-center">
+      <h2>References</h2>
+    </div>
 
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/majarul.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Mr.Mazharul Amin</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Reference: 01 <br>
-                        Name : Mr. Mazharul Amin <br>
-                        Organization : Faridpur Polytechnic Institute<br>
-                        Designation : Cheif Instructor of Computer Technology<br>
-			Program Officer, ASSET Project, Directorate of Technical Education<br>
-                        Address : Baytul Aman.Faridpur<br>
-                        Phone (Off.) : 01717085770 <br>
-                        Phone (Res.) : 01717085770 <br>
-                        Mobile : 01717085770 <br>
-                        E-Mail : mamin.fpi@gmail.com <br>
-                        Relation : Academic<br>
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
+    <div class="swiper testimonials-slider">
+      <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/majarul.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">MD: Fokhrul Islam</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Reference: 02 <br>
-                        Name : MD. Fokhrul Islam <br>
-                        Organization : A Reputed Furniture Manufacturing Group of Company<br>
-                        Designation : Head of IT and MIS<br>
-                        Address : Purana Paltan, Dhaka<br>
-                        Relation : Professional<br>
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide">
+          <div class="testimonial-box">
+            <div class="author-test">
+              <img src="assets/img/majarul.jpg" alt="Mazharul Amin" class="testimonial-img">
+              <h4>Mr. Mazharul Amin</h4>
+            </div>
+            <div class="content-test">
+              <p>
+                <strong>Reference:</strong> 01 <br>
+                <strong>Organization:</strong> Faridpur Polytechnic Institute <br>
+                <strong>Designation:</strong> Chief Instructor, Computer Technology <br>
+                Program Officer, ASSET Project <br>
+                Directorate of Technical Education <br>
+                <strong>Address:</strong> Baytul Aman, Faridpur <br>
+                <strong>Phone:</strong> 01717085770 <br>
+                <strong>Email:</strong> mamin.fpi@gmail.com <br>
+                <strong>Relation:</strong> Academic
+              </p>
+            </div>
           </div>
         </div>
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-box">
+            <div class="author-test">
+              <img src="assets/img/majarul.jpg" alt="Fokhrul Islam" class="testimonial-img">
+              <h4>MD. Fokhrul Islam</h4>
+            </div>
+            <div class="content-test">
+              <p>
+                <strong>Reference:</strong> 02 <br>
+                <strong>Organization:</strong> A Reputed Furniture Manufacturing Group <br>
+                <strong>Designation:</strong> Head of IT & MIS <br>
+                <strong>Address:</strong> Purana Paltan, Dhaka <br>
+                <strong>Relation:</strong> Professional
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div><!-- End Testimonials Section -->
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Navigation buttons (optional) -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+
+  </div>
+</section>
 
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog-mf sect-pt4 route">
@@ -782,13 +833,36 @@ You need to be consistent when it comes to checking the current running tag.
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
 
 </body>
 
 
 </html>
       
+
 
 
 
