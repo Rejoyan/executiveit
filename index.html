@@ -25,6 +25,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
 <style>
+
+.scrolling-text-container {
+  width: 100%;
+  overflow: hidden;
+  background: transparent; /* keep your background */
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  color: antiquewhite;
+  font-size: 1.25rem; /* similar to lead */
+  animation: scroll-left 12s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .section-bg {
   background: #f8f9fa;
   padding: 60px 0;
@@ -747,10 +771,13 @@ You need to be consistent when it comes to checking the current running tag.
                         Get in Touch
                       </h5>
                     </div>
-                    <div class="more-info">
-                      <p style="color: antiquewhite" class="lead">
-                        There's one negative side of mine i want to share with you that I m too much time busting.I spend maximums of my hours in useless R&Ds,for example when i was too young i bought an android phn to practice html and css without letting my parents know.But a few days later the phon OS got so laggy and it was getting high temp at idle,too face this problem I wasted 1 month of my life successfully in reading articles about roms,types of phones storages,what is kernel,what is stable beta or alpha ,recovery modes,custom recoveries,bricking risk,EDL mode etc etc.But the knowledge I got was hudge,Now i can use any android phn smoothly as i may twick its internal OS accroding to my needs. So like this I learned my other study materials from various needs at daily life.
-                      </p>
+						<div class="more-info">
+							<div class="scrolling-text-container">
+							  <div class="scrolling-text">
+							    YOUR CUSTOM TEXT GOES HERE — You can change this anytime.
+						    </div>
+						</div>
+
                       <ul style="color: antiquewhite" class="list-ico">
                         <li><span class="bi bi-geo-alt"></span> Sonargaon,Narayanganj,Dhaka</li>
                         <li><span class="bi bi-phone"></span> +8801849625873</li>
@@ -842,6 +869,7 @@ You need to be consistent when it comes to checking the current running tag.
 
 </html>
       
+
 
 
 
